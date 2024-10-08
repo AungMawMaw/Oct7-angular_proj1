@@ -1,0 +1,12 @@
+<p>condition-in-html works!</p>
+@if (isAdamin) {
+  <p>Adamin</p>
+} @else {
+  <p>not Adamin</p>
+}
+
+<ul>
+  @for (blahblah of blahblahList; track blahblah.name) {
+    <li>{{ blahblah.name }} - {{ blahblah.quantity }}</li>
+  }
+</ul>

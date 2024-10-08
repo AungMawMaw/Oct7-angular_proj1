@@ -1,0 +1,15 @@
+<p>input-accept-data works!</p>
+<p>value: {{ value }}</p>
+<p>count: {{ count }}</p>
+<p>label: {{ label }}</p>
+<p>width: {{ widthPx }}</p>
+
+<p>input-transform-number: {{ number }}</p>
+<button [disabled]="disabled">input-transform-disable</button>
+
+<p>acceptedAlias: {{ acceptedAlias }}</p>
+
+<div>
+  <p>current value:: {{ getSetValue }}</p>
+  <input type="range" [value]="getSetValue" (input)="onInputChange($event)" />
+</div>
